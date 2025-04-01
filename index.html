@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Listly</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo"><img src="logo.png" class="logo-img" />Listly</div>
+      <div class="right-btns">
+        <img src="icons/light.svg" id="mode" class="right-btn" /><img
+          src="icons/settings.svg"
+          id="settings-btn"
+          class="right-btn"
+        />
+      </div>
+    </nav>
+    <div class="settings none" id="settings">
+      <h2>Settings</h2>
+      <div class="setting-item">
+        Sort By
+        <select id="sort-dropdown" class="settings-dropdown">
+          <option value="created">Date created</option>
+          <option value="priority">Priority</option>
+          <option value="date">Due date</option>
+          <option value="starred">Starred</option>
+          <option value="name">Name</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+      <div class="setting-item">
+        Filter
+        <select id="filter-dropdown" class="settings-dropdown">
+          <option value="l-all">All</option>
+          <option value="l-starred">Starred</option>
+        </select>
+      </div>
+      <div id="clear">Clear data</div>
+    </div>
+    <div class="wrap">
+      <div class="task-lists">
+        <div class="task-list" id="task-list">No tasks added. Type one below to get started!</div>
+        <div class="task-list none" id="completed-list">No completed tasks. Go get some work done!</div>
+        <button class="complete-btn" id="complete-btn">
+          <img id="caret" src="icons/caret.svg" /><span id="complete-btn-text"></span>
+        </button>
+      </div>
+      <form class="task-input" id="task-form">
+        <input type="text" placeholder="Enter your task here" id="task-input" autocomplete="off" />
+        <div class="input-btns">
+          <select id="input-priority" class="priority-input-dropdown">
+            <option value="None">None</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Mid</option>
+            <option value="High">High</option>
+          </select>
+          <img class="input-btn" id="input-date" src="icons/date.svg" />
+          <img class="input-btn" id="input-tag" src="icons/tag.svg" />
+          <img class="input-btn" id="input-star" src="icons/star.svg" />
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

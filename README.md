@@ -1,7 +1,7 @@
 
 # Listly
 
-A powerful and lightweight to-do app with managing, editing, tagging, and many more customizable features to help keep track of your tasks! It's built with simplicity in mind and suits your everyday needs for managing tasks efficiently.
+[Listly](https://tonymac129.github.io/listly/) is a powerful and lightweight to-do app with managing, editing, tagging, and many more customizable features to help keep track of your tasks! It's built with simplicity in mind and suits your everyday needs for managing tasks efficiently.
 
 
 ![Logo](https://tonymac129.github.io/listly/logo.png)
